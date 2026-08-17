@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #fff;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header / Nav */
+header {
+  background: #2c3e50;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.navbar {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 56px;
+}
+
+.navbar .site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: .5px;
+}
+
+.navbar .site-title:hover {
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 6px;
+}
+
+.nav-links li a {
+  color: #ccc;
+  font-size: .9rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  display: block;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #fff;
+  background: rgba(255,255,255,.12);
+  text-decoration: none;
+}
+
+.lang-toggle a {
+  color: #aaa;
+  font-size: .82rem;
+  padding: 4px 8px;
+}
+
+.lang-toggle a:hover {
+  color: #fff;
+}
+
+/* Hamburger for mobile */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+  transition: .3s;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: #fff;
+  padding: 64px 24px 48px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.hero .subtitle {
+  font-size: 1rem;
+  opacity: .85;
+  margin-bottom: 16px;
+}
+
+/* Main content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 6px;
+  margin: 36px 0 16px;
+}
+
+.section-title:first-child {
+  margin-top: 0;
+}
+
+/* Info grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.info-card {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 20px 24px;
+  border-radius: 0 8px 8px 0;
+}
+
+.info-card h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: .95rem;
+}
+
+/* Bio links */
+.bio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.bio-links a {
+  display: inline-block;
+  background: #3498db;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: .88rem;
+}
+
+.bio-links a:hover {
+  background: #2980b9;
+  text-decoration: none;
+}
+
+/* What's new */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: .92rem;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-list .date {
+  color: #888;
+  font-weight: 600;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+/* Publication list */
+.pub-section {
+  margin-bottom: 32px;
+}
+
+.pub-section > h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0 0 16px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pub-item {
+  padding: 8px 0 8px 20px;
+  font-size: .9rem;
+  line-height: 1.6;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-item::before {
+  content: "\2022";
+  position: absolute;
+  left: 4px;
+  color: #3498db;
+}
+
+.pub-item strong {
+  color: #2c3e50;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: #aaa;
+  text-align: center;
+  padding: 24px;
+  font-size: .82rem;
+}
+
+footer a {
+  color: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #2c3e50;
+    flex-direction: column;
+    padding: 12px 0;
+    gap: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
