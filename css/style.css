@@ -69,16 +69,6 @@ header {
   text-decoration: none;
 }
 
-.lang-toggle a {
-  color: #aaa;
-  font-size: .82rem;
-  padding: 4px 8px;
-}
-
-.lang-toggle a:hover {
-  color: #fff;
-}
-
 /* Hamburger for mobile */
 .hamburger {
   display: none;
